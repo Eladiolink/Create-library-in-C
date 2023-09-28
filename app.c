@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "libary.h"
+#include "library.h"
 
 int main(){
     printf("Hello World\n");

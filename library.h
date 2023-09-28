@@ -1,5 +1,5 @@
-#ifndef libary
-#define libary
+#ifndef library
+#define library
 
 int soma(int a, int b);
 
