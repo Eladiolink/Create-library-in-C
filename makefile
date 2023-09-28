@@ -1,8 +1,11 @@
 all: build	
 	./.build/run
 	
-build:
-	gcc libary.c app.c -o ./.build/run; 
+build: build-library
+	gcc .build/library.o app.c -o ./.build/run; 
 
-build-library:
-	gcc -c libary.c -o ./.build/library.o
+build-library: create-folder-build
+	gcc -c library.c -o ./.build/library.o
+
+create-folder-build:
+	mkdir -p .build
